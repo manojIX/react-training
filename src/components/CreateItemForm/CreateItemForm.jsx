@@ -28,7 +28,7 @@ export default function CreateItemForm() {
 
   useLayoutEffect(() => {
     inputRef.current.focus();
-  });
+  }, []);
 
   return (
     <form onSubmit={handleSubmit}>
