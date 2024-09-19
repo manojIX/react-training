@@ -30,13 +30,11 @@ export function useItemManager(initialItems) {
   let orderedItems =
     sortCriteria.sortBy === null ? items : items.sort(sortFunction);
 
-  console.log("it", filter);
   const sortedAndFilteredItems =
     filter.length === 0
       ? orderedItems
       : orderedItems.filter((item) => item.description.includes(filter));
 
-  console.log("in hook", items, sortedAndFilteredItems, initialItems);
   return {
     sortedAndFilteredItems,
     setSortTerm,
