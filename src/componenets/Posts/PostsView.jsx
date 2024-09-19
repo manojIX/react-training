@@ -1,4 +1,5 @@
 import data from "./data.json";
+import styles from "./styles.css";
 
 function Post({ postData, allowControls }) {
   const { id, title } = postData;
