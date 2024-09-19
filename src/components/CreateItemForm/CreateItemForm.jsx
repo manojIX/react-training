@@ -1,12 +1,9 @@
-import { useReducer } from "react";
 import { useLayoutEffect } from "react";
 import { useContext } from "react";
 import { useRef } from "react";
-import { useState } from "react";
 import { uid } from "uid";
 import { useFormInput } from "../../hooks/useFormInput";
-import { itemListReducer } from "../../reducers/itemListReducer";
-import { ItemReducerContext } from "../TaskView/ItemView";
+import { ItemReducerContext } from "../ItemView/ItemView";
 
 export default function CreateItemForm() {
   const itemName = useFormInput();

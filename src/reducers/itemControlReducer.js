@@ -1,4 +1,4 @@
-export function taskControlReducer(state, action) {
+export function itemControlReducer(state, action) {
   console.log(action.type);
   if (action.type === "setSortTerm") {
     if (action.sortBy === state.sortBy) {

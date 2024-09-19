@@ -1,5 +1,4 @@
-import { useState } from "react";
-import ItemView from "./components/TaskView/ItemView";
+import ItemView from "./components/ItemView/ItemView";
 
 function App() {
   return <ItemView />;

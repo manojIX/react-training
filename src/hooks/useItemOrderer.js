@@ -1,12 +1,12 @@
 import { useReducer } from "react";
 import { useState } from "react";
-import { taskControlReducer } from "../reducers/taskControlReducer";
+import { itemControlReducer } from "../reducers/itemControlReducer";
 
 export function useItemManager(initialItems) {
   let items = initialItems;
 
   const [filter, setFilter] = useState("");
-  const [sortCriteria, taskControlDipatcher] = useReducer(taskControlReducer, {
+  const [sortCriteria, taskControlDipatcher] = useReducer(itemControlReducer, {
     sortBy: null,
     ascending: false,
   });

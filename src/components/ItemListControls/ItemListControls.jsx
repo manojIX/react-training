@@ -1,4 +1,4 @@
-export default function TaskListControls({ setSortItem, setFilter }) {
+export default function ItemListControls({ setSortItem, setFilter }) {
   return (
     <>
       <span onClick={() => setSortItem("name")}>Name</span>

@@ -1,10 +1,7 @@
-import { useReducer } from "react";
-import { useState } from "react";
 import { useContext } from "react";
 import { useItemManager } from "../../hooks/useItemOrderer";
-import { taskControlReducer } from "../../reducers/taskControlReducer";
-import TaskListControls from "../TaskListControls/TaskListControls";
-import { ItemContext, ItemReducerContext } from "../TaskView/ItemView";
+import TaskListControls from "../ItemListControls/ItemListControls";
+import { ItemReducerContext } from "../ItemView/ItemView";
 
 export default function ItemList({ items }) {
   const dispatcher = useContext(ItemReducerContext);
