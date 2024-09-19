@@ -30,7 +30,7 @@ export default function component() {
       <h1 className="heading">The total number of posts is {posts.length}</h1>
       <ul>
         {posts.map((post) => (
-          <li key={post.userId}>
+          <li key={post.id}>
             <Card post={post} allowControls={post.userId === 123} />
           </li>
         ))}
