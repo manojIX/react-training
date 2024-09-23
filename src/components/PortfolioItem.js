@@ -1,8 +1,12 @@
-export const PortfolioItem = ({ stock }) => {
+import { useDispatch } from "react-redux";
+import { sell } from "../store/data";
 
-  const handleSell = () => {   
-    //TODO:
-  }
+export const PortfolioItem = ({ stock }) => {
+  const dispatch = useDispatch();
+
+  const handleSell = () => {
+    dispatch(sell(stock.id));
+  };
 
   return (
     <li className="stock-list-item" key={stock.id}>
@@ -10,8 +14,10 @@ export const PortfolioItem = ({ stock }) => {
         <span>{stock.name}</span>
         <span>( {stock.quantity} )</span>
       </div>
-      <div>{ (stock.quantity * stock.price).toFixed(2) }</div>
-      <button className="sell-button" onClick={handleSell}>Sell</button>
+      <div>{(stock.quantity * stock.price).toFixed(2)}</div>
+      <button className="sell-button" onClick={handleSell}>
+        Sell
+      </button>
     </li>
   );
 };
