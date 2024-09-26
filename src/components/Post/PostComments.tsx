@@ -1,20 +1,11 @@
-type Props = { profile_image_url: string };
+type Comment = {
+  comment_user_name: string;
+  text: string;
+};
+type Props = { profile_image_url: string; comments: Comment[] };
 
 export default function PostComments(props: Props) {
-  const { profile_image_url } = props;
-
-  let comments = [
-    {
-      comment_user_name: "manoj",
-      comment:
-        "this is a long text this is a long texat this is a long text th",
-    },
-    {
-      comment_user_name: "manoj",
-      comment:
-        "this is a long text this is a long texat this is a long text th",
-    },
-  ];
+  const { profile_image_url, comments } = props;
 
   return (
     <div className="px-[12px]">
@@ -29,7 +20,7 @@ export default function PostComments(props: Props) {
 
       <div className="flex items-center h-[40px]">
         <img
-          className="rounded-full w-[24px] h-[24px]"
+          className="rounded-full w-[24px] h-[24px] object-cover "
           src={profile_image_url}
           alt="Profile image"
         />
