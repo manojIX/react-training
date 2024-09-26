@@ -10,6 +10,8 @@ export default defineConfig({
       "@assets": "/src/assets",
       "@contexts": "/src/contexts",
       "@hooks": "/src/hooks",
+      "@svg": "/src/svg",
+      "@type": "/src/type",
     },
   },
 });
