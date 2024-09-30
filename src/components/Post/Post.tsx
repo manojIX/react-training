@@ -11,7 +11,7 @@ import SaveIcon from "@svg/SaveIcon";
 
 import "./styles.css";
 
-type Props = { user: User; post: PostType; addComment: () => void };
+type Props = { user: User; post: PostType };
 
 export default function Post(props: Props) {
   const {

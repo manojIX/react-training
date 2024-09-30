@@ -5,20 +5,12 @@ import { useState } from "react";
 
 export default function IndexPage() {
   const [data, setData] = useState(posts);
-  const addComment = (postId: string, comment: string) => {
-    const newData = { ...data };
-    const index = data.findIndex((post) => post.post.id === postId);
-    newData[index].post.comments.push({
-      comment,
-      comment_user_name: "anonymous",
-    });
-  };
 
   return (
     <>
       <Header />
       {posts.map(({ post, user }) => (
-        <Post user={user} post={post} addComment={addComment} />
+        <Post user={user} post={post} />
       ))}
     </>
   );
