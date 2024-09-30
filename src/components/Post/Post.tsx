@@ -58,11 +58,7 @@ export default function Post(props: Props) {
         </span>
       </div>
 
-      <PostComments
-        profile_image_url={profile_pic_url}
-        comments={comments}
-        addComment={props.addComment}
-      />
+      <PostComments profile_image_url={profile_pic_url} comments={comments} />
       <span className="px-[12px] text-[#6F7680]"> 11 hours ago</span>
     </div>
   );

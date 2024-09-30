@@ -1,6 +1,6 @@
 type Comment = {
   comment_user_name: string;
-  text: string;
+  comment: string;
 };
 type Props = { profile_image_url: string; comments: Comment[] };
 

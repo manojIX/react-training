@@ -1,6 +1,6 @@
 import { Theme } from "@contexts/ThemeContext";
 
-type Props = { theme: Theme; callback: () => void };
+type Props = { theme: Theme; callback?: () => void };
 
 export default function InstagramFontLogo(props: Props) {
   const fillColor = props.theme === "light" ? "#0C1014" : "#fff";
