@@ -10,7 +10,7 @@ export default function PostComments(props: Props) {
   return (
     <div className="px-[12px]">
       {comments.map((comment) => (
-        <div className="leading-4 my-[3px]">
+        <div key={comment.comment_user_name} className="leading-4 my-[3px]">
           <span className="font-semibold mr-[4px]">
             {comment.comment_user_name}
           </span>

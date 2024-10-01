@@ -41,7 +41,7 @@ export default function Post(props: Props) {
             theme={theme}
             onClick={() => setLiked((liked) => !liked)}
           />
-          {likes + +liked}
+          <span aria-label="likes">{likes + +liked}</span>
         </span>
 
         <span className="inline-flex">

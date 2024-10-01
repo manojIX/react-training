@@ -1,4 +1,4 @@
-import { Theme, ThemeContext } from "@contexts/ThemeContext";
+import { ThemeContext } from "@contexts/ThemeContext";
 import { useContext, useEffect } from "react";
 
 export default function () {

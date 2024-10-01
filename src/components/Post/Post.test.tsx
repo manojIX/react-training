@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { describe, it } from "@jest/globals";
+import { describe, expect, it } from "@jest/globals";
 import Post from "./Post";
 
 describe(Post, () => {
@@ -24,6 +24,7 @@ describe(Post, () => {
       ],
     };
     const { getByLabelText } = render(<Post user={user} post={post} />);
-    console.log(getByLabelText("likes"));
+    const likeCount1 = Number(getByLabelText("likes").textContent);
+    expect(likeCount1).toBe(post.like_count);
   });
 });
