@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 import { describe, expect, it } from "@jest/globals";
 import Post from "./Post";
 
@@ -26,5 +26,9 @@ describe(Post, () => {
     const { getByLabelText } = render(<Post user={user} post={post} />);
     const likeCount1 = Number(getByLabelText("likes").textContent);
     expect(likeCount1).toBe(post.like_count);
+
+    fireEvent.click(getByLabelText("like-icon").children[0]);
+    const likeCount2 = Number(getByLabelText("likes").textContent);
+    expect(likeCount2).toBe(post.like_count + 1);
   });
 });

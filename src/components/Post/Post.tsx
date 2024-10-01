@@ -35,7 +35,7 @@ export default function Post(props: Props) {
       <img className="h-[468px] object-cover mx-auto" src={post_image_url} />
 
       <div className="flex p-[12px] gap-x-[12px]">
-        <span className="inline-flex gap-x-[4px]">
+        <span className="inline-flex gap-x-[4px]" aria-label="like-icon">
           <Heart
             liked={liked}
             theme={theme}
