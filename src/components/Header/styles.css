@@ -1,0 +1,7 @@
+.header-nav > li:hover {
+  cursor: pointer;
+}
+
+.header-nav > li {
+  flex-grow: 1;
+}

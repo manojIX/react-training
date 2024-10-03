@@ -1,0 +1,20 @@
+.main-card {
+  padding: 64px 24px 24px 24px;
+  background-color: white;
+  width: 34.25rem;
+}
+
+.main-card button {
+  font-weight: 500;
+}
+
+.main-card button:hover {
+  color: white;
+  background-color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-card {
+    width: 100%;
+  }
+}

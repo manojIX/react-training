@@ -25,7 +25,8 @@
       "@contexts/*": ["contexts/*"],
       "@hooks/*": ["hooks/*"],
       "@svg/*": ["svg/*"],
-      "@type/*": ["type/*"]
+      "@type/*": ["type/*"],
+      "@pages/*": ["pages/*"]
     }
   },
   "include": ["src"]
