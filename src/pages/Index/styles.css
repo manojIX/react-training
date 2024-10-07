@@ -1,0 +1,138 @@
+.gift-section-wrapper {
+  padding: 24px 40px;
+  background-color: #f5f7f9;
+  font-size: 16px;
+  line-height: 27px;
+  color: #181a1d;
+}
+
+.gift-section {
+  margin: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1224px;
+}
+@media screen and (max-width: 1024px) {
+  .gift-section {
+    flex-direction: column;
+    p {
+      width: 80%;
+    }
+  }
+}
+
+.gift-section > img {
+  width: 50%;
+}
+
+.quiz-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 264px;
+  width: 92.75%;
+  background-repeat: no-repeat;
+  background-image: url("https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_1024/https://images.ctfassets.net/7vk8puwnesgc/1D54adBNKfhj3aveIBZRQB/38e52ba781d3119c4b35279f397cb662/desktop-quiz-darker.png");
+  background-size: cover;
+  border-radius: 10px;
+  justify-content: center;
+  row-gap: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .quiz-section {
+    width: 100%;
+    border-radius: 0px;
+    background-image: url("https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/5Kp9g840WPCpZkVCfKbw1I/3b4d694eb12be6c65d33196524a4177f/mobile-quiz-darker.png");
+    background-position-y: 50%;
+  }
+}
+
+.quiz-section > .title {
+  width: 400px;
+  font-size: 30px;
+  line-height: 34px;
+  color: white;
+  letter-spacing: -0.5px;
+  font-weight: 900;
+}
+
+.quiz-section > button {
+  width: 180px;
+  height: 48px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.blog-container {
+  display: flex;
+  column-gap: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.blog-container .card-img {
+  width: 50vw;
+  background-size: cover;
+  aspect-ratio: 256 / 157;
+  position: relative;
+}
+.blog-container hr {
+  width: 13%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+  background-color: red;
+}
+
+.blog-container .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 18px 2px;
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  bottom: -36px;
+  width: 80%;
+  border-radius: 3px;
+  aspect-ratio: 271 / 108;
+  position: absolute;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .blog-container {
+    flex-direction: column;
+  }
+  .blog-container .card-img {
+    width: 100%;
+    margin-bottom: calc(150px);
+  }
+
+  .blog-container .card {
+    bottom: -100px;
+    aspect-ratio: 571 / 158;
+    width: 95%;
+  }
+
+  .trial-section {
+    flex-direction: column-reverse;
+    padding-left: 0px;
+    padding-right: 0px;
+    row-gap: 40px;
+    img {
+      width: 100%;
+    }
+  }
+}
