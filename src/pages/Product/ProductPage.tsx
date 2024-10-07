@@ -44,6 +44,51 @@ export default function ProductPage() {
       description2:
         '23.8" with 360° of movement for easy transitions to strength, yoga, and more.',
     },
+    "PelotonTread+": {
+      product: "Peloton Tread+",
+      top: "Explore Tread+ > Shop Tread+",
+      image1:
+        "https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/1kLRxnwQnrsAhRJrkXTEsk/f869d6337b3fa801d42916e6387d5c47/gallery-01.jpg",
+      image2:
+        "https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/2drxWC5iuDNwY9aGyDrS4B/9c0c40b63c4030e11f796c942d79b441/gallery-02.jpg",
+      feature1: "Our softest surface",
+      description1:
+        'Our rubberized slat belt is composed of 59 individual slats, giving you 67" of cushioned, energizing running space.',
+
+      feature2: "Tilting touchscreen",
+      description2:
+        'Immerse yourself in a workout that feels larger than life with the 32" tilting touchscreen and soundbar.',
+    },
+    PelotonTread: {
+      product: "Peloton Tread",
+      top: "Explore Tread > Shop Tread",
+      image1:
+        "https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/5U2SKFPV3Yu85eh304VOvP/365accbffe306ec6f77002953f0feb9e/Tread-01.jpg",
+      image2:
+        "https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/78IILDcIvqjlNUMSJLlHm4/85dafe35c46d5387b47f0aa425960d16/Tread-07.jpg",
+      feature1: "Speed & incline knobs",
+      description1:
+        "Easily adjust speed and incline, or automatically follow instructor cues with auto-incline.",
+
+      feature2: "Tilting touchscreen",
+      description2:
+        '23.8" HD touchscreen with front and rear-facing studio-quality speakers.',
+    },
+    PelotonRow: {
+      product: "Peloton Row",
+      top: "Explore Row > Shop Row",
+      image1:
+        "https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/3qFsjZ0LXp0svD45nPDwYY/3c07e37203d6e8066b584977b689272a/Row-01.jpg",
+      image2:
+        "https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/3xKn3Qt312y1ik2TcRYYOR/d898551aecbea6c0ba8d2aa83967a94a/Row-02.jpg",
+      feature1: "Real-time feedback",
+      description1:
+        "Get visual feedback on your form, so you can make improvements while you row.",
+
+      feature2: '23.8" HD swivel touchscreen',
+      description2:
+        "45° of horizontal movement for easy transitions to strength, yoga, and more.",
+    },
   };
   const { productId } = useParams({ from: "/product/$productId" });
   const {

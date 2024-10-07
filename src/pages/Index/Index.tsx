@@ -33,6 +33,7 @@ export default function IndexPage() {
         "$44/mo Peloton All-Access Membership required to access full content on the Peloton Tread+.",
       imageUrl:
         "https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/y2Vcgqd9s2i984Ba83imv/d3d6f6d31ffd76788ffb561d511c5742/product-card-treadplus.png ",
+      url: "/product/PelotonTread+",
     },
     {
       title: "Peloton Tread",
@@ -43,6 +44,7 @@ export default function IndexPage() {
         "$44/mo Peloton All-Access Membership required to access full content on the Peloton Tread.",
       imageUrl:
         "https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/4kdWjFVtFNSfGjYmFpmGCU/e9aebab780a801e10c2d33bd49771a46/tread-card.jpg",
+      url: "/product/PelotonTread",
     },
     {
       title: "Peloton Row",
@@ -54,6 +56,7 @@ export default function IndexPage() {
         "$44/mo Peloton All-Access Membership required to access full content on the Peloton Tread.",
       imageUrl:
         "https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/3MysN3ZLH5iDn3RJg0nU9e/a3d60b4f5b812157d64b75b7b942ae2a/row-product-card.jpg",
+      url: "/product/PelotonRow",
     },
     {
       title: "Peloton App",
