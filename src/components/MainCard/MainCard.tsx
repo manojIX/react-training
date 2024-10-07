@@ -1,4 +1,3 @@
-import Button from "@components/Button/Button";
 import "./styles.css";
 import { Link } from "@tanstack/react-router";
 

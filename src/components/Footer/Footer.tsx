@@ -1,5 +1,3 @@
-import { useWindowSize } from "@hooks/useWindowSize";
-import { Link } from "@tanstack/react-router";
 import "./styles.css";
 
 export default function Footer() {
