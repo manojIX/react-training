@@ -9,6 +9,7 @@ type Props = {
   subtext: string;
   imageUrl: string;
   oldPrice?: string;
+  url: string;
 };
 
 export default function MainCard({
@@ -17,6 +18,7 @@ export default function MainCard({
   cost,
   subtext,
   imageUrl,
+  url,
 }: Props) {
   return (
     <div className="main-card rounded-xl">
@@ -29,7 +31,7 @@ export default function MainCard({
         <button className="px-[24px] py-[5.125px] border-black border-[3px] rounded-md">
           Explore
         </button>
-        <Link>Shop now</Link>
+        <Link to={url}>Shop now</Link>
       </div>
       <div className="text-[16px] font-light text-center">{subtext}</div>
       <img src={imageUrl} className="pt-[33px] mx-auto" />

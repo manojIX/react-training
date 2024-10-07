@@ -1,7 +1,9 @@
 .main-card {
   padding: 64px 24px 24px 24px;
   background-color: white;
-  width: 34.25rem;
+  width: 28.75rem;
+  /* width: 30.75rem; */
+  /* flex: 50%; */
 }
 
 .main-card button {
@@ -11,6 +13,12 @@
 .main-card button:hover {
   color: white;
   background-color: black;
+}
+
+@media screen and (max-width: 1195px) {
+  .main-card {
+    width: 460px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
